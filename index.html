@@ -39,8 +39,8 @@
         </nav>
         <nav class="fixed-bottom" id="bottom-nav">
             <div class="container col-sm-4 gap-2 d-flex justify-content-center d-md-none">
-                <a class="btn btn-secondary btn-sm" href="mailto:336BHandy@gmail.com" >Email</a>
-                <a class="btn btn-success btn-sm" href="tel:3364506140"> Call Us</a>
+                <a class="btn btn-secondary btn-sm p-2 px-4" href="mailto:336BHandy@gmail.com" >Email</a>
+                <a class="btn btn-success btn-sm p-2 px-4" href="tel:3364506140"> Call Us</a>
             </div>
         </nav>
         <!-- Masthead-->
@@ -330,7 +330,7 @@
                 <div class="row gx-4 gx-lg-12 justify-content-center align-items-center">
                     <div class="col-lg-8 col-xl-6 text-center">
                         <h2 class="mt-0" >..we are ready, whenever you are!</h2>
-                        <hr class="divider" />
+                        
                         <p class="  mb-5" >Send us a messages and we will get back to you as soon as possible!</p>
                        
                     </div>
@@ -412,7 +412,9 @@
         </script>
         <script type="text/javascript">
             (function($) {          
-                $(document).ready(function(){                    
+                $(document).ready(function(){    
+                     // hide .navbar first
+                     $("#bottom-nav").hide();                
                     $(window).scroll(function(){                          
                         if ($(this).scrollTop() > 200) {
                             $('#bottom-nav').fadeIn(500);
